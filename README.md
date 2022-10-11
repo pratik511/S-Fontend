@@ -1,3 +1,11 @@
+
+  useEffect(() => {
+    document.title = 'My Page Title';
+  });
+  
+  title set karva mate
+  
+  
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
