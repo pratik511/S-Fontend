@@ -1,11 +1,22 @@
 import './App.css';
-import Header from './component/layout/Header';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Footer from './component/layout/Footer/Footer';
+import Header from './component/layout/Header/Header';
+import Home from './component/Home/Home';
+import ProductDetails from './component/Product/ProductDetails';
 
 function App() {
   return (
-    <div >
-      <Header />
-    </div>
+    <>
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/product/:id' element={<ProductDetails />} />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
+    </>
   );
 }
 
